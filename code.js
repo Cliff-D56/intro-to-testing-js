@@ -4,5 +4,15 @@
 // }
 
 const helloWorld = () => "Hello, World!";
-const sayHello = (name)=>"Hello, "+name;
-sayHello("Clifford");
+const sayHello = (name)=>"Hello, "+name+"!";
+// function sayHello(x){
+//     if (x==="Wifey"){
+//         return "Hello, Wifey!";
+//     }
+//     else if (x==="Alex"){
+//         return "Hello, Alex!";
+//     }
+//     else {
+//         return "Hello, Clifford!";
+//     }
+// }

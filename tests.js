@@ -25,4 +25,13 @@ describe('sayHello', function () {
     it('should not return no name', function () {
         expect(sayHello()).not.toBe("")
     });
+    it('should return "Hello, Clifford!', function () {
+        expect(sayHello("Clifford")).toBe("Hello, Clifford!")
+    });
+    it('should return "Hello, Wifey!"', function () {
+        expect(sayHello("Wifey")).toBe("Hello, Wifey!")
+    });
+    it('should return "Hello, Alex!"', function (){
+        expect(sayHello("Alex")).toBe("Hello, Alex!")
+    });
 });
