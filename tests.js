@@ -45,3 +45,17 @@ describe('sayHello', function () {
 
     });
 });
+describe("isFive", function (){
+    it('should be a defined function', function () {
+        expect(isFive).toBe(isFive)//shows its a function
+    });
+    it('should return boolean', function () {
+        expect(typeof isFive()).toBe("boolean")
+    });
+    it("should return true if 5", function (){
+        expect(isFive(5)).toBe(true)
+    })
+    it('should return true if "5"', function () {
+        expect(isFive("5")).toBe(true)
+    });
+})

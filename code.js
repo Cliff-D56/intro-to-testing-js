@@ -16,3 +16,11 @@ const sayHello = (name)=>(typeof name!="string")||(typeof Number(name)!=="number
 //         return "Hello, Clifford!";
 //     }
 // }
+function isFive(x){
+    if(x===5||x==="5") {
+        return true;
+    }
+    else{
+        return false;
+    }
+};
