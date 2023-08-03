@@ -34,4 +34,14 @@ describe('sayHello', function () {
     it('should return "Hello, Alex!"', function (){
         expect(sayHello("Alex")).toBe("Hello, Alex!")
     });
+    it('should return "Hello, World!', function () {
+        expect(sayHello()).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!', function () {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!', function () {
+        expect(sayHello(false)).toBe("Hello, World!")
+
+    });
 });

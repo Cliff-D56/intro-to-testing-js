@@ -4,7 +4,7 @@
 // }
 
 const helloWorld = () => "Hello, World!";
-const sayHello = (name)=>"Hello, "+name+"!";
+const sayHello = (name)=>(typeof name!="string")||(typeof Number(name)!=="number")?"Hello, World!":"Hello, "+name+"!";
 // function sayHello(x){
 //     if (x==="Wifey"){
 //         return "Hello, Wifey!";
