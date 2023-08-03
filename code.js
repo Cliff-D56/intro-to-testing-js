@@ -16,11 +16,22 @@ const sayHello = (name)=>(typeof name!="string")||(typeof Number(name)!=="number
 //         return "Hello, Clifford!";
 //     }
 // }
-function isFive(x){
-    if(x===5||x==="5") {
-        return true;
-    }
-    else{
+// function isFive(x){
+//     if(x===5||x==="5") {
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// };
+const isFive=(x)=>(x===5||x==="5");
+//const isEven=(x)=>(x===3||x==="banana"||x===Infinity||x===true||x===false||x==="")?false:true;
+const isEven=(x)=>{
+    if(isNaN(x)||typeof x==='boolean'||x===""){
         return false;
     }
-};
+    else{
+        return x%2===0;
+    }
+}
+
